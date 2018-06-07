@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+ul.icons {
+    display: flex;
+    position: absolute;
+    top: 50px;
+    transform: translate(-50%, -50%);
+}
+
+ul.icons li {
+    list-style: none;
+    display: block;
+}
+
+ul.icons li a .fa{
+    position: relative;
+    color: white;
+    left: 10px;
+    height: 10px;
+    font-size: 30px;
+    margin: 20px;
+    z-index: 10;
+    transition: .3s;
+}
+
+ul.icons li#facebook a:hover .fa {
+    color: #3b5999;
+}
+ul.icons li#google a:hover .fa {
+    color: #dd4b39;
+}
+ul.icons li#skype a:hover .fa {
+    color: #00AFF0;
+}
