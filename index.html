@@ -10,29 +10,12 @@
   <title>Bruno Beltrame</title>
 
   <link rel="stylesheet" href="_css/menu.css">
-  <link rel="stylesheet" href="_css/contato.css">
   <link rel="stylesheet" href="_css/style.css" media="screen">
-  <link rel="stylesheet" href="_css/experiencia.css">
-  <link rel="stylesheet" href="_css/formacao.css">
-  <link rel="stylesheet" href="_css/habilidades.css">
 
   <link href="https://fonts.googleapis.com/css?family=Quicksand:500" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
-
-  <style type="text/css">
-    li#photoshop img {
-      position: relative;
-      top: 5px;
-      width: 90px;
-    }
-
-    li#mysql img {
-      position: relative;
-      top: 10px;
-    }
-  </style>
 
   <script type="text/javascript">
     $(window).on('scroll', function () {
@@ -77,9 +60,6 @@
             <li>
               <a href="#H">Habilidades</a>
             </li>
-            <li>
-              <a href="#C">Contato</a>
-            </li>
           </ul>
         </div>
       </nav>
@@ -88,7 +68,7 @@
   <section id="HM" class="hero overlay" data-stellar-background-ratio="0.3">
     <div class="content">
       <h1>Bruno Beltrame</h1>
-      <h3>Web Developer</h3>
+      <h3>Full Stack Developer</h3>
       <a class="btn" href="#QS">Leia Mais</a>
     </div>
   </section>
@@ -96,50 +76,46 @@
   <section class="wrapper">
     <div id="QS" class="content">
       <h2>Quem sou?</h2>
-      <p>Tenho 19 anos e sou apaixonado por web, atuo como profissional desde 2018, com experiência front-end e web desing,
-        busco soluções que focam na necessidade do cliente e do usuário final. Gosto de padrões simples e elegantes, onde
-        a mensagem é passada de forma clara e efetiva. Front end e Arquitetura da informação são minhas inspirações e paixões.</p>
+      <p>Tenho 21 anos e sou apaixonado por web, atuo como profissional desde 2018 e possuo prática full stack com soluções web e desktop. 
+        Gosto de padrões simples e intuítivos, onde a mensagem é passada de forma clara e efetiva.</p>
     </div>
   </section>
 
   <section class="middle overlay" data-stellar-background-ratio="0.3">
     <div id="F" class="content">
-
-      <table>
-        <h2>Formação</h2>
-        <tr>
-          <td id="data">2016-2021</td>
-          <td rowspan="2">
-            <!--img class="img" src="_media/URI_logo.png" /-->|
-          </td>
-          <td id="txt" rowspan="2">URI - Erechim</td>
-          <tr>
-            <td id="data">Bachelor's Degree</td>
-          </tr>
-
-          <tr>
-            <td id="data">2013-2015</td>
-            <td rowspan="2">
-              <!--img class="img" src="_media/URI_logo.png" /-->|
-            </td>
-            <td id="txt" rowspan="2">URI - Erechim</td>
-          </tr>
-          <tr>
-            <td id="data">High School Diplome</td>
-          </tr>
-
-          <tr>
-            <td id="data">2006-2012</td>
-            <td rowspan="2">
-              <!--img class="img" src="_media/URI_logo.png" /-->|
-            </td>
-            <td id="txt" rowspan="2">URI - Erechim</td>
-          </tr>
-          <tr>
-            <td id="data">Elementary School</td>
-          </tr>
-          <!--a class="btn" href="#">Click Here</a-->
-      </table>
+      <h2>Formação</h2>
+      <div class="timeline">      
+        <ul>
+          <li>
+            <div class="content">
+              <h3>Ciência da Computação</h3>
+              <p>URI - Erechim</p>
+            </div>
+            <div class="time">
+                <h4>2016 - 2020</h4>  
+            </div>
+          </li>
+          <li>
+            <div class="content">
+              <h3>Ensino Médio</h3>
+              <p>URI - Erechim</p>
+            </div>
+            <div class="time">
+                <h4>2013 - 2015</h4>  
+            </div>
+          </li>
+          <li>
+            <div class="content">
+              <h3>Ensino Fundamental</h3>
+              <p>URI - Erechim</p>
+            </div>
+            <div class="time">
+              <h4>2006 - 2012</h4>  
+            </div>
+          </li>
+          <div style="clear: both;"></div>
+        </ul>     
+        </div>
     </div>
 
   </section>
@@ -147,16 +123,29 @@
   <section class="wrapper">
     <div id="E" class="content">
       <h2>Experiência</h2>
-      <table id="experiencia">
-        <tr>
-          <td id="data">2015-2018</td>
-          <td id="descricao">FOPPASOFT SISTEMAS INTEGRADOS LTDA</td>
-        </tr>
-        <tr>
-          <td id="data">Analista de Suporte Técnico</td>
-          <td id="descricao">Análise técnica em sistema de gestão empresarial e gestão de pessoas, prestação de suporte técnico ao cliente.</td>
-        </tr>
-      </table>
+      <div class="timeline">      
+      <ul>
+        <li>
+          <div class="content">
+            <h3>Desenvolvedor de Software</h3>
+            <p>Desenvolvimento de soluções ERP, análise, execução e correção de sistemas voltados a gestão empresarial.</p>
+          </div>
+          <div class="time">
+            <h4>2018 - Hoje</h4>  
+          </div>
+          </li>
+          <li>
+              <div class="content">
+                <h3>Analista de Suporte Técnico</h3>
+                <p>Análise técnica em sistema de gestão empresarial e gestão de pessoas, prestação de suporte técnico ao cliente.</p>
+              </div>
+              <div class="time">
+                  <h4>2015 - 2018</h4>  
+              </div>
+          </li>
+        <div style="clear: both;"></div>
+      </ul>     
+      </div> 
     </div>
   </section>
 
@@ -164,59 +153,67 @@
     <div id="H" class="content">
       <h2>Habilidades</h2>
       <ul class="h_icons">
-        <li id="css3">
-          <img src="_media/i_css3.png" />
+        <li id="css3" class="tooltip">
+          <img src="_media/icons/css3.png" />
+          <span class="tooltiptext">CSS3</span>
         </li>
-        <li id="html5">
-          <img src="_media/i_html5.png" />
+        <li id="mysql" class="tooltip">
+          <img src="_media/icons/delphi.png" />
+          <span class="tooltiptext">Delphi</span>
         </li>
-        <li id="photoshop">
-          <img src="_media/i_photoshop(128x128).png" />
+        <li id="mysql" class="tooltip">
+          <img src="_media/icons/firebird.png" />
+          <span class="tooltiptext">Firebird</span>
         </li>
-        <li id="javascrip">
-          <img src="_media/i_javascript.png" />
+        <li id="html5" class="tooltip">
+          <img src="_media/icons/html5.png" />
+          <span class="tooltiptext">HTML5</span>
         </li>
-        <li id="mysql">
-          <img src="_media/i_mysql.png" />
+        <li id="javascrip" class="tooltip">
+          <img src="_media/icons/javascript.png" />
+          <span class="tooltiptext">JavaScript</span>
         </li>
+        <li id="mysql" class="tooltip">
+          <img src="_media/icons/laravel.png" />
+          <span class="tooltiptext">Laravel</span>
+        </li>
+        <li id="mysql" class="tooltip">
+          <img src="_media/icons/mysql.png" />
+          <span class="tooltiptext">MySQL</span>
+        </li>
+        <li id="photoshop" class="tooltip">
+          <img src="_media/icons/photoshop.png" />
+          <span class="tooltiptext">Photoshop</span>
+        </li>
+        <li id="mysql" class="tooltip">
+          <img src="_media/icons/react.png" />
+          <span class="tooltiptext">React</span>
+        </li>        
       </ul>
     </div>
   </section>
-
-  <section class="wrapper">
-    <div id="C" class="content2">
-      <h2>Contato</h2>
-
-
-    </div>
+  <section class="bottom">
+      <p>Copyright &copy; 2018 - by
+        <a href="">Bruno Beltrame</a>
+      </p>
+      <ul class="icons">
+        <li id="facebook">
+          <a href="https://www.facebook.com/bruno.beltrame.100" target="_blank">
+            <i class="fa fa-facebook-f" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li id="linkedin">
+          <a href="https://www.linkedin.com/in/bruno-beltrame/" target="_blank">
+            <i class="fa fa-linkedin" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li id="github">
+          <a href="https://github.com/bbeltrame01" target="_blank">
+            <i class="fa fa-github" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul> 
   </section>
-  <footer id="rodape">
-    <section class="bottom">
-      <div class="rodape">
-        <ul class="icons">
-          <li id="facebook">
-            <a href="https://www.facebook.com/bruno.beltrame.100" target="_blank">
-              <i class="fa fa-facebook-f" aria-hidden="true"></i>
-            </a>
-          </li>
-          <li id="google">
-            <a href="https://plus.google.com/u/0/101356502321351882665" target="_blank">
-              <i class="fa fa-google-plus" aria-hidden="true"></i>
-            </a>
-          </li>
-          <li id="skype">
-            <a href="https://www.facebook.com/bruno.beltrame.100" target="_blank">
-              <i class="fa fa-skype" aria-hidden="true"></i>
-            </a>
-          </li>
-        </ul>
-        <p>Copyright &copy; 2018 - by
-          <a href="">Bruno Beltrame</a>
-        </p>
-      </div>
-    </section>
-
-  </footer>
   <script src="_javascript/jquery-2.0.2.js"></script>
   <script src="_javascript/jquery.stellar.min.js"></script>
   <script>
