@@ -37,7 +37,11 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-	vertical-align: baseline;
+    vertical-align: baseline;
+}
+
+body::-webkit-scrollbar {
+    display: none;
 }
 
 /* Estilos básicos para a página */
