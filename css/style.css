@@ -140,7 +140,7 @@ section{
 	text-shadow:none;
 }
 .hero{
-	background:url('../_media/bg/laptop.jpg');
+	background:url('../media/bg/laptop.jpg');
 	background-size: cover;
 	height: 100%;
     max-height:100%;
@@ -183,7 +183,7 @@ a.btn:hover{
 
 /* =================== FORMAÇÃO =================== */
 .middle{
-	background:url('../_media/bg/binoculo_vintage.jpg');
+	background:url('../media/bg/binoculo_vintage.jpg');
 }
 
 /* ================= EXPERIÊNCIA ================== */
@@ -279,7 +279,7 @@ a.btn:hover{
 
 /* ================= HABILIDADES ================== */
 .midlower{
-	background:url('../_media/bg/camera_retro.jpg');
+	background:url('../media/bg/camera_retro.jpg');
 }
 li#mysql img {
     position: relative;
@@ -357,7 +357,7 @@ ul.h_icons li .fa {
 
 /* ================= CERTIFICADOS ================ */
 .lower {
-    background:url('../_media/bg/notebook.jpg');
+    background:url('../media/bg/notebook.jpg');
 }
 .certificados {
     display: -webkit-box;
