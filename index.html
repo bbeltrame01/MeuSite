@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 
 <head>
   <meta charset="utf-8">
@@ -9,15 +9,15 @@
   <link rel="shortcut icon" href="_media/logo.ico"/>
   <title>Bruno Beltrame</title>
 
+  <!-- CSS -->
   <link rel="stylesheet" href="_css/menu.css">
   <link rel="stylesheet" href="_css/style.css" media="screen">
-
   <link href="https://fonts.googleapis.com/css?family=Quicksand:500" rel="stylesheet">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
+  <!-- Scripts -->
   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
   <script type="text/javascript" src="_javascript/body.js"></script>
-
   <script type="text/javascript">
     $(window).on('scroll', function () {
       if ($(window).scrollTop()) {
@@ -37,40 +37,26 @@
 </head>
 
 <body>
-  <div class="wrapper">
-    <header>
-      <nav>
-        <div class="menu-icon">
-          <i class="fa fa-bars fa-2x"></i>
-        </div>
-        <div class="menu">
-          <ul>
-            <li>
-              <a href="#HM">Home</a>
-            </li>
-            <li>
-              <a href="#QS">Quem Sou</a>
-            </li>
-            <li>
-              <a href="#F">Formação</a>
-            </li>
-            <li>
-              <a href="#E">Experiência</a>
-            </li>
-            <li>
-              <a href="#H">Habilidades</a>
-            </li>
-            <li>
-              <a href="#I">Idiomas</a>
-            </li>
-            <li>
-              <a href="#C">Certificados</a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
-  </div>
+  <header class="wrapper">
+    <nav>
+      <div class="menu-icon">
+        <i class="fa fa-bars fa-2x"></i>
+      </div>
+      <div class="menu">
+        <ul>
+          <li><a href="#HM">Home</a></li>
+          <li><a href="#QS">Quem Sou</a></li>
+          <li><a href="#F">Formação</a></li>
+          <li><a href="#E">Experiência</a></li>
+          <li><a href="#H">Habilidades</a></li>
+          <li><a href="#I">Idiomas</a></li>
+          <li><a href="#C">Certificados</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Home -->
   <section id="HM" class="hero overlay" data-stellar-background-ratio="0.3">
     <div class="content">
       <h1>Bruno Beltrame</h1>
@@ -79,20 +65,24 @@
     </div>
   </section>
 
+  <!-- Quem sou -->
   <section class="wrapper">
     <div id="QS" class="content">
       <h2>Quem sou?</h2>
-      <p>Tenho 
+      <p>
+        Tenho 
         <script>
           today = new Date();
           bday  = new Date("Jule 29, 1998");
           document.write(diff_years(today, bday));
         </script> 
         anos e sou apaixonado por inovações e tecnologias, atuo como profissional desde 2018 e possuo prática full stack com soluções web e desktop. 
-        Gosto de padrões simples e intuítivos, onde a mensagem é passada de forma clara e compreensível.</p>
+        Gosto de padrões simples e intuítivos, onde a mensagem é passada de forma clara e compreensível.
+      </p>
     </div>
   </section>
 
+  <!-- Formação -->
   <section class="middle overlay" data-stellar-background-ratio="0.3">
     <div id="F" class="content">
       <h2>Formação</h2>
@@ -100,7 +90,7 @@
         <ul>
           <li>
             <div class="content">
-              <h3>Ciência da Computação</h3>
+              <h3>Bacharelado em Ciência da Computação</h3>
               <p>URI - Erechim</p>
             </div>
             <div class="time">
@@ -129,9 +119,9 @@
         </ul>     
         </div>
     </div>
-
   </section>
 
+  <!-- Experiência -->
   <section class="wrapper">
     <div id="E" class="content">
       <h2>Experiência</h2>
@@ -170,6 +160,7 @@
     </div>
   </section>
 
+  <!-- Habilidades -->
   <section class="midlower overlay" data-stellar-background-ratio="0.3">
     <div id="H" class="content">
       <h2>Habilidades</h2>      
@@ -241,6 +232,8 @@
       </ul>
     </div>
   </section>
+
+  <!-- Idiomas -->
   <section class="wrapper">
     <div id="I" class="content">
       <h2>Idiomas</h2>
@@ -260,6 +253,8 @@
       </div>
     </div>
   </section>
+
+  <!-- Certificados -->
   <section class="lower overlay" data-stellar-background-ratio="0.3">
     <div id="C" class="content">
       <h2>Certificados</h2>
@@ -377,41 +372,39 @@
       </div>
     </div>
   </section>
-  <section class="bottom">
-    <div class="rodape">
-      <ul class="icons">
-        <li id="linkedin">
-          <a href="https://www.linkedin.com/in/bruno-beltrame/" target="_blank">
-            <i class="fa fa-linkedin" aria-hidden="true"></i>
-          </a>
-        </li>
-        <li id="github">
-          <a href="https://github.com/bbeltrame01" target="_blank">
-            <i class="fa fa-github" aria-hidden="true"></i>
-          </a>
-        </li>
-        <li id="medium">
-          <a href="https://medium.com/@bruno.beltrame" target="_blank">
-            <i class="fa fa-medium" aria-hidden="true"></i>
-          </a>
-        </li>
-        <li id="facebook">
-          <a href="https://www.facebook.com/bruno.beltrame.100" target="_blank">
-            <i class="fa fa-facebook-f" aria-hidden="true"></i>
-          </a>
-        </li>
-      </ul>
-      <p>Copyright &copy; 2018 - by
-        <a href="">Bruno Beltrame</a>
-      </p>
-    </div>
-  </section>
+
+  <!-- Rodapé -->
+  <bottom class="bottom">
+    <ul class="icons">
+      <li id="linkedin">
+        <a href="https://www.linkedin.com/in/bruno-beltrame/" target="_blank">
+          <i class="fa fa-linkedin" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li id="github">
+        <a href="https://github.com/bbeltrame01" target="_blank">
+          <i class="fa fa-github" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li id="medium">
+        <a href="https://medium.com/@bruno.beltrame" target="_blank">
+          <i class="fa fa-medium" aria-hidden="true"></i>
+        </a>
+      </li>
+      <li id="facebook">
+        <a href="https://www.facebook.com/bruno.beltrame.100" target="_blank">
+          <i class="fa fa-facebook-f" aria-hidden="true"></i>
+        </a>
+      </li>
+    </ul>
+    <p>
+      Copyright &copy; 2018 - by Bruno Beltrame
+    </p>
+  </bottom>
+
   <script src="_javascript/jquery-2.0.2.js"></script>
   <script src="_javascript/jquery.stellar.min.js"></script>
-  <script>
-    $.stellar();
-  </script>
-
+  <script>$.stellar();</script>
   <script type="text/javascript" src="_javascript/menu.js"></script>
 </body>
 

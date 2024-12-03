@@ -1,12 +1,7 @@
-/* Projeto: Meu Site                                */
-/* Desenvolvedor: Bruno Beltrame                    */
-/* Link: https://github.com/bbeltrame01/MeuSite     */
-
 @charset "UTF-8";
 
 /* ==================== GERAL ===================== */
-
-*{
+* {
 	-webkit-box-sizing:border-box;
 	   -moz-box-sizing:border-box;
 	        box-sizing:border-box;
@@ -18,7 +13,6 @@
     font-family: Avenir Light;
     src: url('_fontes/Avenir Light.otf');
 }
-
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -39,7 +33,6 @@ time, mark, audio, video {
 	font: inherit;
     vertical-align: baseline;
 }
-
 body::-webkit-scrollbar {
     display: none;
 }
@@ -70,35 +63,31 @@ body{
 }
 .bottom{
     position: relative;
-	display: flex;
+	display: flex;    
+	flex-direction: row;
 	width: 100%;
 	bottom: 0;
 	margin: 0 auto;
 	background-color:#26292C;
 	justify-content: center;
-	flex-direction: row;
     align-items: center;
-	height: 100px;
-    padding: 70px;
 }
 
 /* Estilos para Texto da página */
+h1, h2, h3 {
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
 h1 {
 	font-size: 4rem;
-	text-transform: uppercase;
-	margin-bottom:20px;
 }
 h2 {
 	font-size: 2.5rem;
-	text-transform: uppercase;
 	line-height: 4rem;
-	margin-bottom:20px;
 }
 h3 {
 	font-size: 1.6rem;
-	text-transform: uppercase;
 	line-height: 2.5rem;
-	margin-bottom:20px;
 }
 p {
 	font-size: 1rem;
@@ -192,15 +181,12 @@ a.btn:hover{
 	color:white;
 }
 
-/* =================== QUEM SOU =================== */
-
 /* =================== FORMAÇÃO =================== */
 .middle{
 	background:url('../_media/bg/binoculo_vintage.jpg');
 }
 
 /* ================= EXPERIÊNCIA ================== */
-
 .timeline:before {
     content: '';
     position: absolute;
@@ -209,12 +195,10 @@ a.btn:hover{
     height: 100%;
     background-color: #c5c5c5;
 }
-
 .timeline {
     position: relative;
     margin: 50px auto;
 }
-
 .timeline ul {
     position: relative;
 }
@@ -225,7 +209,6 @@ a.btn:hover{
     padding: 20px 40px;
     box-sizing: border-box;
 }
-
 .timeline ul li:nth-child(odd){
     float: left;
     text-align: right;
@@ -236,7 +219,6 @@ a.btn:hover{
     text-align: left;
     clear: both;
 }
-
 .timeline ul li:nth-child(odd):before{
     content: '';
     position: absolute;
@@ -299,12 +281,10 @@ a.btn:hover{
 .midlower{
 	background:url('../_media/bg/camera_retro.jpg');
 }
-
 li#mysql img {
     position: relative;
     top: 10px;
 }
-
 ul.h_icons {
     display: block;
     position: relative;
@@ -312,11 +292,9 @@ ul.h_icons {
     align-items: center;
     justify-content: center;
 }
-
 ul.h_icons li {
     list-style: none;
 }
-
 ul.h_icons li img {
     padding: 15px;
     width: 100px;
@@ -324,17 +302,15 @@ ul.h_icons li img {
     margin: 20px;
     transition: .3s;
 }
-
 ul.h_icons li .fa {
     font-size: 50px;
 }
-
 .tooltip {
     position: relative;
     display: inline-block;
-  }
+}
   
-  .tooltip .tooltiptext {
+.tooltip .tooltiptext {
     visibility: hidden;
     width: 120px;
     background-color: black;
@@ -347,9 +323,9 @@ ul.h_icons li .fa {
     top: 90%;
     left: 50%;
     margin-left: -60px;
-  }
+}
   
-  .tooltip .tooltiptext::after {
+.tooltip .tooltiptext::after {
     content: "";
     position: absolute;
     bottom: 100%;
@@ -358,11 +334,10 @@ ul.h_icons li .fa {
     border-width: 5px;
     border-style: solid;
     border-color: transparent transparent black transparent;
-  }
-
-  .tooltip:hover .tooltiptext {
+}
+.tooltip:hover .tooltiptext {
     visibility: visible;
-  }
+}
 
 /* =================== IDIOMAS ==================== */
 .idiomas {
@@ -372,12 +347,10 @@ ul.h_icons li .fa {
     align-items: center;
     justify-content: center;
 }
-
 .idiomas li {
     margin: 20px;
     text-align: left;
 }
-
 .idiomas li h3 {
     margin-bottom: 0;
 }
@@ -386,7 +359,6 @@ ul.h_icons li .fa {
 .lower {
     background:url('../_media/bg/notebook.jpg');
 }
-
 .certificados {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -398,7 +370,6 @@ ul.h_icons li .fa {
     flex-wrap: wrap;
     padding: 50px 0;
 }
-
 .certificado {
     -ms-flex-preferred-size: calc(33.33333% - 30px);
     flex-basis: calc(33.33333% - 30px);
@@ -406,7 +377,6 @@ ul.h_icons li .fa {
     overflow: hidden;
     border-radius: 28px;
 }
-
 .certificado_link {
     display: block;
     padding: 30px 20px;
@@ -415,7 +385,6 @@ ul.h_icons li .fa {
     overflow: hidden;
     position: relative;
 }
-
 .certificado_link:hover,
 .certificado_link:hover .certificado_subtitle {
     text-decoration: none;
@@ -423,13 +392,11 @@ ul.h_icons li .fa {
     opacity: 1;
     transition: opacity 2s ease-out;
 }
-
 .certificado_link:hover .certificado_bg {
     -webkit-transform: scale(10);
     -ms-transform: scale(10);
     transform: scale(10);
 }
-
 .certificado_title {
     min-height: 87px;
     margin: 0 0 25px;  
@@ -440,7 +407,6 @@ ul.h_icons li .fa {
     z-index: 2;
     position: relative;
 }
-
 .certificado_subtitle {
     position: relative;
     font-size: 18px;
@@ -451,7 +417,6 @@ ul.h_icons li .fa {
     -o-transition: color .5s ease;
     transition: color .5s ease
 }
-
 .certificado_bg {
     height: 128px;
     width: 128px;
@@ -465,37 +430,28 @@ ul.h_icons li .fa {
     -o-transition: all .5s ease;
     transition: all .5s ease;
 }
-
 .certificado:nth-child(2n) .certificado_bg {
     background-color: #3ecd5e;
-  }
-  .certificado:nth-child(3n) .certificado_bg {
+}
+.certificado:nth-child(3n) .certificado_bg {
     background-color: #e44002;
-  }
-  .certificado:nth-child(4n) .certificado_bg {
+}
+.certificado:nth-child(4n) .certificado_bg {
     background-color: #952aff;
-  }
-  .certificado:nth-child(5n) .certificado_bg {
+}
+.certificado:nth-child(5n) .certificado_bg {
     background-color: #cd3e94;
-  }
-  .certificado:nth-child(6n) .certificado_bg {
+}
+.certificado:nth-child(6n) .certificado_bg {
     background-color: #4c49ea;
-  }
-
-/* ==================== RODAPÉ ==================== */
-.rodape {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
 }
 
+/* ==================== RODAPÉ ==================== */
 .bottom p {  
 	align-items: center;  
 	font-size: calc(10px + 1vmin);
 	padding: 10px 30px;
 }
-
 ul.icons {
     color: #fff;
     display: flex;
@@ -507,12 +463,10 @@ ul.icons {
 	padding: 10px;
 	width: 300px;
 }
-
 ul.icons li {
     list-style: none;
     display: block;
 }
-
 ul.icons li a .fa{
     position: relative;
     color: white;
@@ -523,7 +477,6 @@ ul.icons li a .fa{
     z-index: 10;
     transition: .3s;
 }
-
 ul.icons li#linkedin a:hover .fa {
     color: #0077B5;
 }
