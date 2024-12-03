@@ -69,6 +69,7 @@ body{
 	overflow:hidden;
 }
 .bottom{
+    position: relative;
 	display: flex;
 	width: 100%;
 	bottom: 0;
@@ -78,6 +79,7 @@ body{
 	flex-direction: row;
     align-items: center;
 	height: 100px;
+    padding: 70px;
 }
 
 /* Estilos para Texto da página */
@@ -104,7 +106,7 @@ p {
 	text-shadow:none;
 }
 
-.content#QS, .content#F, .content#E, .content#H, .content#C {
+.content#QS, .content#F, .content#E, .content#H, .content#C, .content#I {
 	padding: 100px;
 }
 
@@ -294,14 +296,8 @@ a.btn:hover{
 }
 
 /* ================= HABILIDADES ================== */
-.lower{
+.midlower{
 	background:url('../_media/bg/camera_retro.jpg');
-}
-
-li#photoshop img {
-    position: relative;
-    top: 5px;
-    width: 90px;
 }
 
 li#mysql img {
@@ -310,9 +306,8 @@ li#mysql img {
 }
 
 ul.h_icons {
-    display: flex;
+    display: block;
     position: relative;
-    left: 5%;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
@@ -369,23 +364,148 @@ ul.h_icons li .fa {
     visibility: visible;
   }
 
+/* =================== IDIOMAS ==================== */
+.idiomas {
+    display: block;
+    position: relative;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.idiomas li {
+    margin: 20px;
+    text-align: left;
+}
+
+.idiomas li h3 {
+    margin-bottom: 0;
+}
+
+/* ================= CERTIFICADOS ================ */
+.lower {
+    background:url('../_media/bg/notebook.jpg');
+}
+
+.certificados {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+
+.certificado {
+    -ms-flex-preferred-size: calc(33.33333% - 30px);
+    flex-basis: calc(33.33333% - 30px);
+    margin: 0 15px 30px;
+    overflow: hidden;
+    border-radius: 28px;
+}
+
+.certificado_link {
+    display: block;
+    padding: 30px 20px;
+    background-color: #121212;
+    opacity: 0.75;
+    overflow: hidden;
+    position: relative;
+}
+
+.certificado_link:hover,
+.certificado_link:hover .certificado_subtitle {
+    text-decoration: none;
+    color: #FFF;
+    opacity: 1;
+    transition: opacity 2s ease-out;
+}
+
+.certificado_link:hover .certificado_bg {
+    -webkit-transform: scale(10);
+    -ms-transform: scale(10);
+    transform: scale(10);
+}
+
+.certificado_title {
+    min-height: 87px;
+    margin: 0 0 25px;  
+    overflow: hidden;  
+    font-weight: bold;
+    font-size: 20px;
+    color: #FFF;  
+    z-index: 2;
+    position: relative;
+}
+
+.certificado_subtitle {
+    position: relative;
+    font-size: 18px;
+    font-weight: bold;
+    color: #f9b234;
+    z-index: 2;  
+    -webkit-transition: color .5s ease;
+    -o-transition: color .5s ease;
+    transition: color .5s ease
+}
+
+.certificado_bg {
+    height: 128px;
+    width: 128px;
+    background-color: #f9b234;  
+    z-index: 1;
+    position: absolute;
+    top: -75px;
+    right: -75px;  
+    border-radius: 50%;  
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.certificado:nth-child(2n) .certificado_bg {
+    background-color: #3ecd5e;
+  }
+  .certificado:nth-child(3n) .certificado_bg {
+    background-color: #e44002;
+  }
+  .certificado:nth-child(4n) .certificado_bg {
+    background-color: #952aff;
+  }
+  .certificado:nth-child(5n) .certificado_bg {
+    background-color: #cd3e94;
+  }
+  .certificado:nth-child(6n) .certificado_bg {
+    background-color: #4c49ea;
+  }
+
 /* ==================== RODAPÉ ==================== */
+.rodape {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
 .bottom p {  
 	align-items: center;  
 	font-size: calc(10px + 1vmin);
-	padding: 0 30px;
+	padding: 10px 30px;
 }
 
 ul.icons {
     color: #fff;
     display: flex;
     flex-direction: row;
-	position: absolute;
+	position: relative;
 	justify-content: center;
 	align-items: center;
-	line-height: 2rem;
+	line-height: 3rem;
 	padding: 10px;
-	width: 250px;
+	width: 300px;
 }
 
 ul.icons li {
@@ -404,12 +524,15 @@ ul.icons li a .fa{
     transition: .3s;
 }
 
-ul.icons li#facebook a:hover .fa {
-    color: #3b5999;
-}
 ul.icons li#linkedin a:hover .fa {
     color: #0077B5;
 }
 ul.icons li#github a:hover .fa {
     color: #1c1c1d;
+}
+ul.icons li#medium a:hover .fa {
+    color: #1c1c1d;
+}
+ul.icons li#facebook a:hover .fa {
+    color: #3b5999;
 }

@@ -13,9 +13,10 @@
   <link rel="stylesheet" href="_css/style.css" media="screen">
 
   <link href="https://fonts.googleapis.com/css?family=Quicksand:500" rel="stylesheet">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 
   <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script type="text/javascript" src="_javascript/body.js"></script>
 
   <script type="text/javascript">
     $(window).on('scroll', function () {
@@ -27,7 +28,6 @@
     });
 
     /*Menu Tuggle Button*/
-
     $(document).ready(function () {
       $(".menu-icon").on("click", function () {
         $("nav ul").toggleClass("showing");
@@ -60,6 +60,12 @@
             <li>
               <a href="#H">Habilidades</a>
             </li>
+            <li>
+              <a href="#I">Idiomas</a>
+            </li>
+            <li>
+              <a href="#C">Certificados</a>
+            </li>
           </ul>
         </div>
       </nav>
@@ -76,8 +82,14 @@
   <section class="wrapper">
     <div id="QS" class="content">
       <h2>Quem sou?</h2>
-      <p>Tenho 21 anos e sou apaixonado por web, atuo como profissional desde 2018 e possuo prática full stack com soluções web e desktop. 
-        Gosto de padrões simples e intuítivos, onde a mensagem é passada de forma clara e efetiva.</p>
+      <p>Tenho 
+        <script>
+          today = new Date();
+          bday  = new Date("Jule 29, 1998");
+          document.write(diff_years(today, bday));
+        </script> 
+        anos e sou apaixonado por inovações e tecnologias, atuo como profissional desde 2018 e possuo prática full stack com soluções web e desktop. 
+        Gosto de padrões simples e intuítivos, onde a mensagem é passada de forma clara e compreensível.</p>
     </div>
   </section>
 
@@ -92,7 +104,7 @@
               <p>URI - Erechim</p>
             </div>
             <div class="time">
-                <h4>2016 - 2020</h4>  
+                <h4>2016 - 2021</h4>  
             </div>
           </li>
           <li>
@@ -127,11 +139,20 @@
       <ul>
         <li>
           <div class="content">
-            <h3>Desenvolvedor de Software</h3>
-            <p>Desenvolvimento de soluções ERP, análise, execução e correção de sistemas voltados a gestão empresarial.</p>
+            <h3>Desenvolvedor Delphi + PostgreSQL</h3>
+            <p>Desenvolvimento de sistemas de saúde pública, análise, execução e correção de sistemas voltados a atendimento e gestão hospitalar.</p>
           </div>
           <div class="time">
-            <h4>2018 - Hoje</h4>  
+            <h4>2022 - Hoje</h4>  
+          </div>
+          </li>
+        <li>
+          <div class="content">
+            <h3>Desenvolvedor Delphi + Firebird</h3>
+            <p>Desenvolvimento de soluções ERP, análise, execução e correção de sistemas voltados a gestão empresarial, contábil e fiscal.</p>
+          </div>
+          <div class="time">
+            <h4>2018 - 2022</h4>  
           </div>
           </li>
           <li>
@@ -140,7 +161,7 @@
                 <p>Análise técnica em sistema de gestão empresarial e gestão de pessoas, prestação de suporte técnico ao cliente.</p>
               </div>
               <div class="time">
-                  <h4>2015 - 2018</h4>  
+                  <h4>2015 - 2022</h4>  
               </div>
           </li>
         <div style="clear: both;"></div>
@@ -149,59 +170,216 @@
     </div>
   </section>
 
-  <section class="lower overlay" data-stellar-background-ratio="0.3">
+  <section class="midlower overlay" data-stellar-background-ratio="0.3">
     <div id="H" class="content">
-      <h2>Habilidades</h2>
+      <h2>Habilidades</h2>      
       <ul class="h_icons">
-        <li id="css3" class="tooltip">
-          <img src="_media/icons/css3.png" />
-          <span class="tooltiptext">CSS3</span>
-        </li>
-        <li id="mysql" class="tooltip">
-          <img src="_media/icons/delphi.png" />
-          <span class="tooltiptext">Delphi</span>
-        </li>
-        <li id="mysql" class="tooltip">
-          <img src="_media/icons/firebird.png" />
-          <span class="tooltiptext">Firebird</span>
-        </li>
-        <li id="html5" class="tooltip">
-          <img src="_media/icons/html5.png" />
-          <span class="tooltiptext">HTML5</span>
-        </li>
-        <li id="javascrip" class="tooltip">
-          <img src="_media/icons/javascript.png" />
-          <span class="tooltiptext">JavaScript</span>
-        </li>
-        <li id="mysql" class="tooltip">
-          <img src="_media/icons/laravel.png" />
-          <span class="tooltiptext">Laravel</span>
-        </li>
-        <li id="mysql" class="tooltip">
-          <img src="_media/icons/mysql.png" />
-          <span class="tooltiptext">MySQL</span>
-        </li>
-        <li id="photoshop" class="tooltip">
-          <img src="_media/icons/photoshop.png" />
-          <span class="tooltiptext">Photoshop</span>
-        </li>
-        <li id="mysql" class="tooltip">
-          <img src="_media/icons/react.png" />
-          <span class="tooltiptext">React</span>
-        </li>        
+        <div class="expert">
+          <h3>- Especialidades -</h3>
+          <li id="delphi" class="tooltip">
+            <img src="_media/icons/delphi.png" />
+            <span class="tooltiptext">Delphi</span>
+          </li>
+          <li id="firebird" class="tooltip">
+            <img src="_media/icons/firebird.png" />
+            <span class="tooltiptext">Firebird</span>
+          </li>
+          <li id="postgresql" class="tooltip">
+            <img src="_media/icons/postgresql.png" />
+            <span class="tooltiptext">PostgreSQL</span>
+          </li>
+        </div>
+        <div class="advanced">
+          <h3>- Avançado -</h3>
+          <li id="jira" class="tooltip">
+            <img src="_media/icons/jira.png" />
+            <span class="tooltiptext">JIRA</span>
+          </li>
+          <li id="gitlab" class="tooltip">
+            <img src="_media/icons/gitlab.png" />
+            <span class="tooltiptext">GitLab</span>
+          </li>
+          <li id="mysql" class="tooltip">
+            <img src="_media/icons/mysql.png" />
+            <span class="tooltiptext">MySQL</span>
+          </li>
+        </div>
+        <div class="medium">
+          <h3>- Intermediário -</h3>
+          <li id="github" class="tooltip">
+            <img src="_media/icons/github.png" />
+            <span class="tooltiptext">Git</span>
+          </li>
+          <li id="html5" class="tooltip">
+            <img src="_media/icons/html5.png" />
+            <span class="tooltiptext">HTML5</span>
+          </li>
+          <li id="css3" class="tooltip">
+            <img src="_media/icons/css3.png" />
+            <span class="tooltiptext">CSS3</span>
+          </li>
+        </div>
+        <div class="basic">
+          <h3>- Básico- </h3>
+          <li id="python" class="tooltip">
+            <img src="_media/icons/python.png" />
+            <span class="tooltiptext">Python</span>
+          </li>
+          <li id="laravel" class="tooltip">
+            <img src="_media/icons/laravel.png" />
+            <span class="tooltiptext">Laravel</span>
+          </li>
+          <li id="react" class="tooltip">
+            <img src="_media/icons/react.png" />
+            <span class="tooltiptext">ReactJS</span>
+          </li>
+          <li id="javascript" class="tooltip">
+            <img src="_media/icons/javascript.png" />
+            <span class="tooltiptext">Javascript</span>
+          </li>
+        </div>   
       </ul>
     </div>
   </section>
-  <section class="bottom">
-      <p>Copyright &copy; 2018 - by
-        <a href="">Bruno Beltrame</a>
-      </p>
-      <ul class="icons">
-        <li id="facebook">
-          <a href="https://www.facebook.com/bruno.beltrame.100" target="_blank">
-            <i class="fa fa-facebook-f" aria-hidden="true"></i>
-          </a>
+  <section class="wrapper">
+    <div id="I" class="content">
+      <h2>Idiomas</h2>
+      <div class="idiomas">
+        <li id="portugues" class="tooltip">
+          <h3>Português</h3>
+          <p>Proeficiência Nativa ou Bilíngue</p>
         </li>
+        <li id="ingles" class="tooltip">
+          <h3>Inglês</h3>
+          <p>Proeficiência de Trabalho Limitada</p>
+        </li>
+        <li id="postgresql" class="tooltip">
+          <h3>Espanhol</h3>
+          <p>Conhecimento Básico</p>
+        </li>
+      </div>
+    </div>
+  </section>
+  <section class="lower overlay" data-stellar-background-ratio="0.3">
+    <div id="C" class="content">
+      <h2>Certificados</h2>
+      <div class="certificados">
+        <div class="certificado">
+          <a href="https://www.uricer.edu.br/certificados/validate?c=c1fe5b01c6b7b013c12b27f7ebeffbab" target="_blank" class="certificado_link">
+            <div class="certificado_bg"></div>
+            <div class="certificado_title">
+              Minicurso: Desenvolvimento Web
+            </div>
+            <span class="certificado_subtitle">
+              URI - Erechim
+            </span>
+          </a>
+        </div>
+        <div class="certificado">
+          <a href="https://www.uricer.edu.br/certificados/validate?c=68201529589088729ab0ae8db41e4148" target="_blank" class="certificado_link">
+            <div class="certificado_bg"></div>
+            <div class="certificado_title">
+              IX Simpósio de Tecnologia da Informação da Região Norte e Noroeste do RS
+            </div>
+            <span class="certificado_subtitle">
+              URI - Erechim
+            </span>
+          </a>
+        </div>
+        <div class="certificado">
+          <a href="https://www.uricer.edu.br/certificados/validate?c=8af90eaa92ccf97e92ccd0dece08037f" target="_blank" class="certificado_link">
+            <div class="certificado_bg"></div>
+            <div class="certificado_title">
+              Minicurso: Ruby on Rails
+            </div>
+            <span class="certificado_subtitle">
+              URI - Erechim
+            </span>
+          </a>
+        </div>
+        <div class="certificado">
+          <a href="https://www.sympla.com.br/baixar-certificado/8V4H95VUvDednae_LewZP6wkT8NonGNoc133_BwKNZc" target="_blank" class="certificado_link">
+            <div class="certificado_bg"></div>
+            <div class="certificado_title">
+              Empreendedorismo Digital - 2018 (Desenvolvimento)
+            </div>
+            <span class="certificado_subtitle">
+              Startup Weekend
+            </span>
+          </a>
+        </div>
+        <div class="certificado">
+          <a href="_certificates/Curso_PHP.pdf" target="_blank" class="certificado_link">
+            <div class="certificado_bg"></div>
+            <div class="certificado_title">
+              Curso de PHP
+            </div>
+            <span class="certificado_subtitle">
+              Curso em Vídeo
+            </span>
+          </a>
+        </div>
+        <div class="certificado">
+          <a href="_certificates/Curso_Web.pdf" target="_blank" class="certificado_link">
+            <div class="certificado_bg"></div>
+            <div class="certificado_title">
+              Curso de Desenvolvimento Web (HTML5, CSS3)
+            </div>
+            <span class="certificado_subtitle">
+              Curso em Vídeo
+            </span>
+          </a>
+        </div>
+        <div class="certificado">
+          <a href="https://www.sympla.com.br/baixar-certificado/vavG9ISI8tx4dbuokriqGdQX4Bad9PmGK7rgFNiHWdY" target="_blank" class="certificado_link">
+            <div class="certificado_bg"></div>
+            <div class="certificado_title">
+              Empreendedorismo Digital - 2019 (Desevolvimento)
+            </div>
+            <span class="certificado_subtitle">
+              Startup Weekend
+            </span>
+          </a>
+        </div>
+        <div class="certificado">
+          <a href="https://www.uricer.edu.br/certificados/validate?c=88d3fb101f4c431cc09141dca39acd28" target="_blank" class="certificado_link">
+            <div class="certificado_bg"></div>
+            <div class="certificado_title">
+              Desafio 24h
+            </div>
+            <span class="certificado_subtitle">
+              URI - Erechim
+            </span>
+          </a>
+        </div>
+        <div class="certificado">
+          <a href="http://www.uricer.edu.br/certificados/validate?c=35b4f6966ad7158b5563bf8347951a04" target="_blank" class="certificado_link">
+            <div class="certificado_bg"></div>
+            <div class="certificado_title">
+              X Simpósio de Tecnologia da Informação da Região Norte e Noroeste do RS
+            </div>
+            <span class="certificado_subtitle">
+              URI - Erechim
+            </span>
+          </a>
+        </div>
+        <div class="certificado">
+          <a href="_certificates/Curso_MySQL.pdf" target="_blank" class="certificado_link">
+            <div class="certificado_bg"></div>
+            <div class="certificado_title">
+              Curso de MySQL
+            </div>
+            <span class="certificado_subtitle">
+              Curso em Vídeo
+            </span>
+          </a>
+        </div>        
+      </div>
+    </div>
+  </section>
+  <section class="bottom">
+    <div class="rodape">
+      <ul class="icons">
         <li id="linkedin">
           <a href="https://www.linkedin.com/in/bruno-beltrame/" target="_blank">
             <i class="fa fa-linkedin" aria-hidden="true"></i>
@@ -212,7 +390,21 @@
             <i class="fa fa-github" aria-hidden="true"></i>
           </a>
         </li>
-      </ul> 
+        <li id="medium">
+          <a href="https://medium.com/@bruno.beltrame" target="_blank">
+            <i class="fa fa-medium" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li id="facebook">
+          <a href="https://www.facebook.com/bruno.beltrame.100" target="_blank">
+            <i class="fa fa-facebook-f" aria-hidden="true"></i>
+          </a>
+        </li>
+      </ul>
+      <p>Copyright &copy; 2018 - by
+        <a href="">Bruno Beltrame</a>
+      </p>
+    </div>
   </section>
   <script src="_javascript/jquery-2.0.2.js"></script>
   <script src="_javascript/jquery.stellar.min.js"></script>
